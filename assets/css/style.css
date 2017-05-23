@@ -1,7 +1,22 @@
+body{
+	background: url(../images/background.jpg);
+}
 .charImage{
 	width:150px;
 	padding:10px;
 }
 .charButton{
 	margin:10px;
+}
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center-text{
+	text-align:center;
+}
+.btn-attack{
+	margin-top:100px;
+	margin-bottom:10px;
 }

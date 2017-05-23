@@ -11,24 +11,30 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!--Add Bootstrap from CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <h2 id="gameResult"></h2>
-    <div class="row container">Select a Character:
+    <div class="container">
+    <h3 id="gameMessage">Select a Character</h3>
+    <div class="row container">
         <div id="characterSelection"></div>
     </div>
-  
-    <div class="row container">Player Character:
-        <div id="playerChar"></div>
+    <div class="panel row center-block container">
+        <div class="panel-heading col-md-5 center-text">Player Character:
+            <div class="panel-body" id="playerChar"></div>
+        </div>
+        <div class="col-md-2 center-text">
+            <button class= "btn btn-danger btn-attack" id="attackBtn">Attack</button>
+            <div id="attackDetails"></div>
+        </div>
+        <div class="panel-heading col-md-5 center-text">Opponent:
+            <div class="panel-body" id="opponentChar"></div>
+        </div>
     </div>
-    <div class="row container">Opponent:
-        <div id="opponentChar"></div>
     </div>
-    <div>
-        <button id="attackBtn">Attack</button>
-    </div>
+    
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
