@@ -7,32 +7,33 @@
 
     <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!--Add Bootstrap from CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
-
+    <!-- Added link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-    <h3 id="gameMessage">Select a Character</h3>
-    <div class="row container">
+    <div class ="header1 center-text russoFont" id="gameMessage">Select a Character:</div>    
+    <div class="container center-justify wrap">
         <div id="characterSelection"></div>
     </div>
-    <div class="panel row center-block container">
-        <div class="panel-heading col-md-5 center-text">Player Character:
-            <div class="panel-body" id="playerChar"></div>
+    
+    <!--battle panel container-->
+    <div class="container center-justify">
+        <div class="container battle-panel center-justify">
+            <div>
+                <div class="center-text header2 russoFont">Player Character:</div>
+                <div id="playerChar"></div>
+            </div>
+            <div>
+                <button class= "russoFont battle-btn center-justify" id="attackBtn">Attack</button>
+                <div class="openFont center-text battle-details" id="attackDetails"></div>
+            </div>
+            <div>
+                <div class="center-text header2 russoFont">Opponent:</div>
+                <div id="opponentChar"></div>
+            </div>
         </div>
-        <div class="col-md-2 center-text">
-            <button class= "btn btn-danger btn-attack" id="attackBtn">Attack</button>
-            <div id="attackDetails"></div>
-        </div>
-        <div class="panel-heading col-md-5 center-text">Opponent:
-            <div class="panel-body" id="opponentChar"></div>
-        </div>
-    </div>
     </div>
     
 	<script type="text/javascript" src="assets/javascript/game.js"></script>

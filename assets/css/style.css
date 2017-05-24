@@ -1,22 +1,93 @@
 body{
 	background: url(../images/background.jpg);
+	line-height:150%;
 }
+
+.battle-btn{
+	font-size:16px;
+	width:100px;
+	padding:20px;
+	margin:50px;
+	background-color:red;
+	border-radius: 10px;
+}
+
+.battle-details{
+	width:200px;
+}
+
+.battle-panel{
+	color:white;
+	width:600px;
+	height: 250px;
+	padding:25px;
+	border-radius: 20px;
+	margin:25px;
+	background-color:rgba(186, 185, 185, 0.1);
+}
+
+.center-justify {
+	justify-content: center;	
+}
+
+.center-text{
+	text-align:center;
+}
+
+.charButton{
+	margin:10px;
+	background-color:black;
+	color:white;
+	border-radius: 10px;
+	line-height:150%;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .charImage{
 	width:150px;
 	padding:10px;
 }
-.charButton{
+
+.charName{
+	font-size:16px;
+}
+
+.container{
+	display: flex;
+}
+
+.header1{
+	margin:25px;
+	font-size: 30px;
+	color:white;
+}
+
+.header2{
+	width:200px;
 	margin:10px;
+	font-size:20px;
 }
-.center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+.openFont{
+	font-family: 'Open Sans', sans-serif;
 }
-.center-text{
-	text-align:center;
+
+.row{
+	flex-direction: row;
 }
-.btn-attack{
-	margin-top:100px;
-	margin-bottom:10px;
+
+.russoFont{
+	font-family: 'Russo One', sans-serif;
 }
+
+.space-between{
+	justify-content: space-between;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+
+
+
