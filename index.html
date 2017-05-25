@@ -13,11 +13,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div class ="header1 center-text russoFont" id="gameMessage">Select a Character:</div>    
+    
+    <div class ="header1 center-text russoFont" id="gameMessage">Select a Character:</div>
+ 
     <div class="container center-justify wrap">
         <div id="characterSelection"></div>
     </div>
-    
+        
     <!--battle panel container-->
     <div class="container center-justify">
         <div class="container battle-panel center-justify">
@@ -27,6 +29,7 @@
             </div>
             <div>
                 <button class= "russoFont battle-btn center-justify" id="attackBtn">Attack</button>
+                
                 <div class="openFont center-text battle-details" id="attackDetails"></div>
             </div>
             <div>
@@ -35,7 +38,11 @@
             </div>
         </div>
     </div>
-    
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+   
+    <div class="container center-justify">
+        <button class= "russoFont battle-btn center-text hidden"  id="reset">Reset</button>
+    </div>
+	
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
